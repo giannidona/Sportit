@@ -1,11 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Sportit</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="container mx-auto flex justify-between py-5">
+        <div class="my-auto pl-5">
+          <img src="../img/logo.svg" alt="logo" />
+        </div>
+        <div class="my-auto text-center">
+          <ul
+            class="absolute left-0 top-[-500px] z-[1] w-full bg-white py-5 pl-7 opacity-0 transition-all duration-500 ease-in md:static md:z-auto md:flex md:w-auto md:items-center md:py-0 md:pl-0 md:opacity-100"
+          >
+            <li class="px-3 py-5 font-semibold hover:text-neutral-400">
+              <a href="">Sports</a>
+            </li>
+            <li class="px-3 py-5 font-semibold hover:text-neutral-400">
+              <a href="">Products</a>
+            </li>
+            <li class="px-3 py-5 font-semibold hover:text-neutral-400">
+              <a href="">About us</a>
+            </li>
+            <li class="px-3 py-5 font-semibold hover:text-neutral-400">
+              <a href="">Trainning</a>
+            </li>
+            <li class="px-3 py-5 font-semibold hover:text-neutral-400">
+              <a href="">Community</a>
+            </li>
+          </ul>
+        </div>
+        <div class="my-auto pr-5">
+          <button
+            class="hidden rounded-full bg-purple-700 px-10 py-3 text-white hover:bg-violet-600 sm:flex"
+          >
+            Contact
+          </button>
+          <span class="mx-2 block cursor-pointer text-3xl md:hidden">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container sm:mx-auto sm:flex">
+        <div>
+          <img
+            class="mx-auto w-96 sm:w-auto"
+            src="../img/padel-intro.png"
+            alt=""
+          />
+        </div>
+        <div class="mx-auto max-w-xs text-right sm:my-auto sm:mr-0 sm:max-w-md">
+          <p class="pb-5 pt-10 text-5xl font-black">
+            LIVE: Follow the Telcel Huawei Mexico Open 2022 for free
+          </p>
+          <p class="pb-5">
+            The final Open of the 2022 World Padel Tour season is underway,
+            don't miss out on any of the action!
+          </p>
+          <button
+            class="rounded-full bg-purple-700 px-10 py-3 text-white hover:bg-violet-600"
+          >
+            Contact
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="my-10 bg-purple-700">
+      <div
+        class="container pl-5 text-white sm:mx-auto sm:flex sm:justify-between"
+      >
+        <div class="max-w-prose">
+          <p class="py-8 text-4xl font-bold">What's different between pros?</p>
+        </div>
+        <div class="max-w-prose sm:my-auto">
+          <p class="pb-8 sm:hidden">
+            Manage provides all the functionality your teas needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams
+          </p>
+          <p class="hidden sm:flex">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            aliquet consequat purus sit amet sodales. In faucibus ut nisi eu
+            dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="mb-10">
+      <div class="container mx-auto">
+        <div class="justify-center sm:flex">
+          <article class="m-5 mb-10 max-w-xl">
+            <div class="flex">
+              <p class="my-auto ml-5 font-bold">
+                <span
+                  class="rounded-full bg-purple-700 px-5 py-2.5 font-bold text-white"
+                  >01</span
+                >
+                Track company-wide progress
+              </p>
+            </div>
+            <p class="pl-20 text-left text-gray-400">
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </article>
+          <article class="m-5 mb-10 max-w-xl">
+            <div class="flex">
+              <p class="my-auto ml-5 font-bold">
+                <span
+                  class="rounded-full bg-purple-700 px-5 py-2.5 font-bold text-white"
+                  >02</span
+                >
+                Advance built-in reports
+              </p>
+            </div>
+            <p class="pl-20 text-left text-gray-400">
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </article>
+        </div>
+        <div class="flex justify-center">
+          <article class="m-5 mb-10 max-w-xl">
+            <div class="flex">
+              <p class="my-auto ml-5 font-bold">
+                <span
+                  class="rounded-full bg-purple-700 px-5 py-2.5 font-bold text-white"
+                  >03</span
+                >
+                Everything you need in one place
+              </p>
+            </div>
+            <p class="pl-20 text-left text-gray-400">
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="mb-10">
+      <h1 class="mb-8 text-center text-4xl font-bold text-slate-700">
+        Best of the month
+      </h1>
+      <div class="container mx-auto sm:flex">
+        <div class="mx-auto mb-8 max-w-sm text-center">
+          <img class="mx-auto" src="../img/avatar-sanyo.png" alt="" />
+          <p class="my-3 font-bold">Sanyo</p>
+          <p>
+            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+            mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+        </div>
+        <div class="mx-auto mb-8 max-w-sm text-center">
+          <img class="mx-auto" src="../img/avatar.lebron.png" alt="" />
+          <p class="my-3 font-bold">Lebron</p>
+          <p>
+            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+            mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+        </div>
+        <div class="mx-auto mb-8 max-w-sm text-center">
+          <img class="mx-auto" src="../img/avatar-navarro.png" alt="" />
+          <p class="my-3 font-bold">Navarro</p>
+          <p>
+            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+            mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-purple-700">
+      <div class="container text-white sm:mx-auto sm:flex sm:justify-between">
+        <div class="mx-auto max-w-xs text-center">
+          <p class="py-8 text-4xl font-bold">
+            Get to know the best teams of the year
+          </p>
+        </div>
+        <div class="mx-auto max-w-xs text-center sm:my-auto">
+          <button
+            class="mb-8 rounded-full bg-white px-10 py-3 align-middle text-purple-700 drop-shadow-xl sm:my-auto"
+          >
+            More
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="h-250 bg-slate-950">
+      <div class="container mx-auto">
+        <a href=""><img class="mx-auto py-8" src="../img/logo.svg" alt="" /></a>
+        <div class="flex justify-around sm:justify-center">
+          <a class="p-2.5" href=""
+            ><img src="../img/icon-facebook.svg" alt=""
+          /></a>
+          <a class="p-2.5" href=""
+            ><img src="../img/icon-youtube.svg" alt=""
+          /></a>
+          <a class="p-2.5" href=""
+            ><img src="../img/icon-twitter.svg" alt=""
+          /></a>
+          <a class="p-2.5" href=""
+            ><img src="../img/icon-pinterest.svg" alt=""
+          /></a>
+          <a class="p-2.5" href=""
+            ><img src="../img/icon-instagram.svg" alt=""
+          /></a>
+        </div>
+        <div class="flex justify-evenly pt-8 text-white">
+          <div class="">
+            <ul>
+              <li class="pb-3"><a href="">Home</a></li>
+              <li class="pb-3"><a href="">Pricing</a></li>
+              <li class="pb-3"><a href="">Products</a></li>
+              <li class="pb-3"><a href="">About us</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li class="pb-3"><a href="">Trainning</a></li>
+              <li class="pb-3"><a href="">Community</a></li>
+              <li class="pb-3"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center py-5">
+          <input
+            class="mr-2 rounded-full px-2 py-2.5"
+            type="text"
+            placeholder="Update in your inbox..."
+          />
+          <button
+            class="rounded-full bg-purple-700 px-10 py-3 text-white hover:bg-violet-600"
+          >
+            More
+          </button>
+        </div>
+        <p class="text-center text-gray-800">
+          Copyright 2020. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
 </html>
